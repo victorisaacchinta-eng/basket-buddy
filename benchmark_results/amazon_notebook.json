@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "result": "[{\"name\":\"Classmate Long Notebook - 140 Pages, Single Line, 297mm x 210mm (Pack of 12)\",\"price\":\"₹576\"},{\"name\":\"Lay Flat Binding Notebook - Verite by Classmate Ideal for School Students, Charcoal Color, Size (in cm) 24 X 18, Single Line, Thick Premium 120 Pages with Low Ink Bleed for Smooth Writing Experience\",\"price\":\"₹100\"},{\"name\":\"Premium Executive Diary & Notebook | A4 Spiral Bound Business Planner | 5-Section Professional Notebook | Luxury Black Cover Office Diary | Meeting, Notes, Planning & Daily Task Organizer for Professionals\",\"price\":\"₹699\"},{\"name\":\"Lay Flat Binding Longbook - Verite by Classmate Ideal for School Students, Sunshine Color, A4 Size, Single Line, Thick Premium 140 Pages with Low Ink Bleed for Smooth Writing Experience\",\"price\":\"₹93.15\"},{\"name\":\"PackMate A4 Unruled Exercise Notebook | Premium Quality Blank Notebook | 100% Recycled Unbleached Paper | Eco-Friendly Journal for Writing, Sketching & Office Use | Durable Cover for Students & Professionals\",\"price\":\"₹375\"}]",
+  "logs": [],
+  "page": {
+    "id": "page-1789200097473-7",
+    "url": "https://www.amazon.in/s?k=notebook",
+    "title": "Amazon.in : notebook"
+  },
+  "artifacts": [],
+  "warnings": [
+    {
+      "code": "BROWSER_RUN_SNAPSHOT_DIFF_OMITTED",
+      "message": "Snapshot diff exceeded the 65536-character output ceiling and was omitted. If the returned result and page metadata are sufficient, continue without another observation. Otherwise inspect the relevant scope with a targeted browser snapshot or extraction."
+    }
+  ],
+  "limits": {
+    "outputTruncated": false,
+    "snapshotTruncated": true,
+    "snapshotDiffOmitted": true
+  },
+  "timings": {
+    "quickjs_boot_ms": 1,
+    "client_bundle_init_ms": 97,
+    "program_ms": 3555,
+    "browser_wait_ms": 3560,
+    "snapshot_ms": 645
+  }
+}

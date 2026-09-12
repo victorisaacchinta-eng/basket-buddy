@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "result": "[{\"name\":\"XLR8\",\"price\":\"₹460\"},{\"name\":\"Milk\",\"price\":\"₹99\"},{\"name\":\"Nandini\",\"price\":null},{\"name\":\"Nestlé Milkmaid Partly Skimmed Sweetened Condensed Milk, 380g Tin\",\"price\":\"₹140\"},{\"name\":\"Aptamil\",\"price\":null}]",
+  "logs": [],
+  "page": {
+    "id": "page-1789200097473-7",
+    "url": "https://www.amazon.in/s?k=milk",
+    "title": "Amazon.in : milk"
+  },
+  "artifacts": [],
+  "warnings": [
+    {
+      "code": "BROWSER_RUN_SNAPSHOT_DIFF_OMITTED",
+      "message": "Snapshot diff exceeded the 65536-character output ceiling and was omitted. If the returned result and page metadata are sufficient, continue without another observation. Otherwise inspect the relevant scope with a targeted browser snapshot or extraction."
+    }
+  ],
+  "limits": {
+    "outputTruncated": false,
+    "snapshotTruncated": true,
+    "snapshotDiffOmitted": true
+  },
+  "timings": {
+    "quickjs_boot_ms": 1,
+    "client_bundle_init_ms": 97,
+    "program_ms": 3416,
+    "browser_wait_ms": 3420,
+    "snapshot_ms": 617
+  }
+}

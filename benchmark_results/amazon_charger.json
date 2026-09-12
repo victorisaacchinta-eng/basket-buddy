@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "result": "[{\"name\":\"COSTAR Original 22.5W Dual Port Charger(USB & Type C), Fast Charger,Compatible with Samsung Galaxy S26, S25, S24, S23(Ultra/+/Fe, S/Z/A/M/F All Series), iPhone,Vivo,Oppo,Realme & Type-C Devices(Black)\",\"price\":\"₹369\"},{\"name\":\"Honeywell Zest PD 20W Type-C Charger Adapter with PPS, Ultra-Fast Charging, PD 3.0, BIS Certified for iPhone 17/17 Air / 17 Pro / 17 Pro Max, Samsung Galaxy, Pixel, iPad, AirPods & More\",\"price\":\"₹399\"},{\"name\":\"SuperVOOC 80W Fast Charging Adapter and Cable Set, USB-C Compatible with White Charger with Red Cable\",\"price\":\"₹284\"},{\"name\":\"SB 45W Fast Charger Type C to C Cable, PD 3.0 Super Fast Charging 2.0 Compatible for Samsung Galaxy S24 Ultra S23 S22 Plus A Series, USB C Wall Charger Adapter with Cable\",\"price\":\"₹330\"},{\"name\":\"boAt 25W GaN Fast Charger for Samsung, Xiaomi & Android Users with Overheat/Overcharge Protection & Auto Detection with Type C to Type C Support (White)\",\"price\":\"₹649\"}]",
+  "logs": [],
+  "page": {
+    "id": "page-1789200097473-7",
+    "url": "https://www.amazon.in/s?k=charger",
+    "title": "Amazon.in : charger"
+  },
+  "artifacts": [],
+  "warnings": [
+    {
+      "code": "BROWSER_RUN_SNAPSHOT_DIFF_OMITTED",
+      "message": "Snapshot diff exceeded the 65536-character output ceiling and was omitted. If the returned result and page metadata are sufficient, continue without another observation. Otherwise inspect the relevant scope with a targeted browser snapshot or extraction."
+    }
+  ],
+  "limits": {
+    "outputTruncated": false,
+    "snapshotTruncated": true,
+    "snapshotDiffOmitted": true
+  },
+  "timings": {
+    "quickjs_boot_ms": 1,
+    "client_bundle_init_ms": 96,
+    "program_ms": 3292,
+    "browser_wait_ms": 3295,
+    "snapshot_ms": 599
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "result": "[]",
+  "logs": [],
+  "page": {
+    "id": "page-1789200106859-8",
+    "url": "https://www.zepto.com/search?query=rice",
+    "title": "Zepto | Everything delivered in minutes*"
+  },
+  "snapshotDiff": "<page title=\"Zepto | Everything delivered in minutes*\" url=\"https://www.zepto.com/search?query=rice\">\n+ \t<frame index=\"0\" url=\"https://www.zepto.com/search?query=rice\" scope=\"document\">\n+ \t\t<document ref=\"l1\" focused=\"true\">\n+ \t\t\tZepto | Everything delivered in minutes*\n+ \t\t\t<banner ref=\"l3\">\n+ \t\t\t\t<link ref=\"l4\" href=\"/\">Zepto Home</link>\n+ \t\t\t\tDelivery in minutes*\n+ \t\t\t\t<button ref=\"l5\">\n+ \t\t\t\t\t### Select Location\n+ \t\t\t\t</button>\n+ \t\t\t\t<combobox ref=\"l7\" focused=\"true\" autocomplete=\"both\" value=\"rice\" placeholder=\"Search for over 70,000 products\">\n+ \t\t\t\t\tSearch\n+ \t\t\t\t\trice\n+ \t\t\t\t</combobox>\n+ \t\t\t\tSearch\n+ \t\t\t\t<button ref=\"l8\">\n+ \t\t\t\t\tlogin\n+ \t\t\t\t\t<button ref=\"l9\">Login</button>\n+ \t\t\t\t</button>\n+ \t\t\t\t<button ref=\"l10\">Cart</button>\n+ \t\t\t\tYour cart is empty\n+ \t\t\t</banner>\n+ \t\t\t### Please Login\n+ \t\t\t<button ref=\"l13\">\n+ \t\t\t\t###### Login\n+ \t\t\t</button>\n+ \t\t\t<main ref=\"l15\">\n+ \t\t\t\t<link ref=\"l16\" href=\"/cn/paan-corner/cigarettes/cid/cd50825e-baf8-47fe-9abc-ed9556122a9a/scid/5bcbee47-7c83-4279-80f…\">\n+ \t\t\t\t\tPaan Corner Paan Corner arrow-right\n+ \t\t\t\t\t<image ref=\"l19\">Paan Corner</image>\n+ \t\t\t\t\t<button ref=\"l20\">\n+ \t\t\t\t\t\t<image ref=\"l21\">arrow-right</image>\n+ \t\t\t\t\t</button>\n+ \t\t\t\t</link>\n+ \t\t\t\t<link ref=\"l22\" href=\"/category/fruits-vegetables\">\n+ \t\t\t\t\tFruits &amp; Vegetables Fruits &amp; Vegetables arrow-right\n+ \t\t\t\t\t<image ref=\"l25\">Fruits &amp; Vegetables</image>\n+ \t\t\t\t\t<button ref=\"l26\">\n+ \t\t\t\t\t\t<image ref=\"l27\">arrow-right</image>\n+ \t\t\t\t\t</button>\n+ \t\t\t\t</link>\n+ \t\t\t\t<link ref=\"l28\" href=\"/cn/electricals-accessories/top-picks/cid/966dc8a0-8f21-420e-a897-8dd70b4228f6/scid/7734eb25-78…\">\n+ \t\t\t\t\tElectronics &amp; Appliances Electronics &amp; Appliances arrow-right\n+ \t\t\t\t\t<image ref=\"l31\">Electronics &amp; Appliances</image>\n+ \t\t\t\t\t<button ref=\"l32\">\n+ \t\t\t\t\t\t<image ref=\"l33\">arrow-right</image>\n+ \t\t\t\t\t</button>\n+ \t\t\t\t</link>\n+ \t\t\t\t<link ref=\"l34\" href=\"/cn/home-needs/top-picks/cid/ac7b3ee1-98cb-48b8-8c62-27f47b4185a2/scid/e23f3966-4135-4aa2-88ca-…\">\n+ \t\t\t\t\tHome Needs Home Needs arrow-right\n+ \t\t\t\t\t<image ref=\"l37\">Home Needs</image>\n+ \t\t\t\t\t<button ref=\"l38\">\n+ \t\t\t\t\t\t<image ref=\"l39\">arrow-right</image>\n+ \t\t\t\t\t</button>\n+ \t\t\t\t</link>\n+ \t\t\t\t<link ref=\"l40\" href=\"/cn/stationery-books/stationery-books/cid/0d74209d-c2e4-431b-98e0-c00a92766773/scid/68aecbfb-46…\">\n+ \t\t\t\t\tStationery &amp; Crafts Stationery &amp; Crafts arrow-right\n+ \t\t\t\t\t<image ref=\"l43\">Stationery &amp; Crafts</image>\n+ \t\t\t\t\t<button ref=\"l44\">\n+ \t\t\t\t\t\t<image ref=\"l45\">arrow-right</image>\n+ \t\t\t\t\t</button>\n+ \t\t\t\t</link>\n+ \t\t\t</main>\n+ \t\t</document>\n+ \t</frame>\n</page>",
+  "artifacts": [],
+  "warnings": [],
+  "limits": {
+    "outputTruncated": false,
+    "snapshotTruncated": false
+  },
+  "timings": {
+    "quickjs_boot_ms": 0,
+    "client_bundle_init_ms": 84,
+    "program_ms": 2284,
+    "browser_wait_ms": 2285,
+    "snapshot_ms": 320
+  }
+}

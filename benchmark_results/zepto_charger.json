@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "result": "[]",
+  "logs": [],
+  "page": {
+    "id": "page-1789200106859-8",
+    "url": "https://www.zepto.com/search?query=charger",
+    "title": "Zepto | Everything delivered in minutes*"
+  },
+  "snapshotDiff": "<page title=\"Zepto | Everything delivered in minutes*\" url=\"https://www.zepto.com/search?query=charger\">\n\t<frame index=\"0\" url=\"https://www.zepto.com/search?query=charger\" scope=\"document\">\n\t\t<document ref=\"l1\" focused=\"true\">\n\t\t\t<banner ref=\"l3\">\n~ \t\t\t\t<combobox ref=\"l7\" focused=\"true\" autocomplete=\"both\" value=\"charger\" placeholder=\"Search for over 70,000 products\">charger</combobox>\n\t\t\t</banner>\n\t\t</document>\n\t</frame>\n</page>",
+  "artifacts": [],
+  "warnings": [],
+  "limits": {
+    "outputTruncated": false,
+    "snapshotTruncated": false
+  },
+  "timings": {
+    "quickjs_boot_ms": 0,
+    "client_bundle_init_ms": 81,
+    "program_ms": 2430,
+    "browser_wait_ms": 2432,
+    "snapshot_ms": 361
+  }
+}

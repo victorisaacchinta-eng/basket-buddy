@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "result": "[{\"name\":\"Parachute Advansed Protein Shampoo with Coconut Milk & Rosemary | Up to 96% Hair Fall Reduction & up to 23X Hair Fall Control | Protein Lock Technology | Paraben free | For Men & Women | 1.2L\",\"price\":\"₹549\"},{\"name\":\"L'Oreal Paris Hyaluron Pure Purifying Shampoo - Oily/Dry Hair, 800ml\",\"price\":\"₹576.60\"},{\"name\":\"L'Oréal Paris Collagen Lifter Volumizing Shampoo with Collagen Peptides for thin, flat hair, gives instant volume lift & thicker, fuller hair, 340ml\",\"price\":\"₹441\"},{\"name\":\"Plum Coconut Milk & Peptides Shampoo for Dry & Frizzy Hair | Provides 22X Shiny & Softer | Paraben-Free | Hair Shampoo for Women & Men | for Straight, Wavy & Rough Hair | pH Balanced | 500ml\",\"price\":\"₹482\"},{\"name\":\"Parachute Advansed Hairfall Defense Set | Hair Oil + Shampoo + Conditioner | Coconut Milk & Rosemary | Up to 2x Thicker Hair | Dermatologically Tested | Paraben Free Shampoo | 810ml\",\"price\":\"₹588\"}]",
+  "logs": [],
+  "page": {
+    "id": "page-1789200097473-7",
+    "url": "https://www.amazon.in/s?k=shampoo",
+    "title": "Amazon.in : shampoo"
+  },
+  "artifacts": [],
+  "warnings": [
+    {
+      "code": "BROWSER_RUN_SNAPSHOT_DIFF_OMITTED",
+      "message": "Snapshot diff exceeded the 65536-character output ceiling and was omitted. If the returned result and page metadata are sufficient, continue without another observation. Otherwise inspect the relevant scope with a targeted browser snapshot or extraction."
+    }
+  ],
+  "limits": {
+    "outputTruncated": false,
+    "snapshotTruncated": true,
+    "snapshotDiffOmitted": true
+  },
+  "timings": {
+    "quickjs_boot_ms": 0,
+    "client_bundle_init_ms": 67,
+    "program_ms": 3997,
+    "browser_wait_ms": 3999,
+    "snapshot_ms": 655
+  }
+}
