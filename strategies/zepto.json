@@ -1,0 +1,7 @@
+{
+  "platform": "zepto",
+  "search_url_pattern": "https://www.zepto.com/search?query={query}",
+  "product_card_selector_note": "Same ADD-button walk-up pattern as Blinkit",
+  "extraction_note": "Discount badges like 'OFF' and rating counts like '(10.2k)' can leak into the name field if not explicitly filtered, more filtering needed than Blinkit had",
+  "gotchas": ["No login required to see prices, like Amazon", "Card text has more noise lines than Blinkit (rating counts, badges)"]
+}

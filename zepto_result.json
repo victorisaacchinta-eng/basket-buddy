@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "result": "[{\"name\":\"Godrej Jersy Fresh Toned Milk\",\"size\":\"1 pack\",\"price\":\"22\",\"mrp\":\"27\"},{\"name\":\"Nandini Goodlife Toned UHT Milk (Fino Pouch)\",\"size\":\"1 pack\",\"price\":\"32\",\"mrp\":null},{\"name\":\"Godrej Jersey Full Cream Milk\",\"size\":\"1 pack\",\"price\":\"31\",\"mrp\":\"38\"},{\"name\":\"Nandini Toned Fresh Milk | Pouch\",\"size\":\"1 pack\",\"price\":\"24\",\"mrp\":null},{\"name\":\"Country Delight Cow Fresh Milk | Pouch\",\"size\":\"1 pack\",\"price\":\"46\",\"mrp\":\"48\"},{\"name\":\"Nandini Standardized Fresh Milk | Pouch\",\"size\":\"1 pack\",\"price\":\"27\",\"mrp\":null},{\"name\":\"Country Delight Buffalo Fresh Milk | Pouch\",\"size\":\"1 pack\",\"price\":\"55\",\"mrp\":\"59\"},{\"name\":\"Nandini Good Life Toned UHT Milk (Fino Pouch)\",\"size\":\"1 pack\",\"price\":\"15\",\"mrp\":null},{\"name\":\"(10.2k)\",\"size\":\"25g\",\"price\":\"50\",\"mrp\":\"59\"},{\"name\":\"Amul Gold Full Cream Fresh Milk | Pouch\",\"size\":\"1 pack\",\"price\":\"34\",\"mrp\":null}]",
+  "logs": [],
+  "page": {
+    "id": "page-1789193666709-4",
+    "url": "https://www.zepto.com/search?query=milk",
+    "title": "Zepto | Everything delivered in minutes*"
+  },
+  "snapshotDiff": "",
+  "artifacts": [],
+  "warnings": [],
+  "limits": {
+    "outputTruncated": false,
+    "snapshotTruncated": false
+  },
+  "timings": {
+    "quickjs_boot_ms": 0,
+    "client_bundle_init_ms": 61,
+    "program_ms": 5,
+    "browser_wait_ms": 7,
+    "snapshot_ms": 450
+  }
+}

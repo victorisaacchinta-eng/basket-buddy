@@ -1,0 +1,7 @@
+{
+  "platform": "blinkit",
+  "search_url_pattern": "https://blinkit.com/s/?q={query}",
+  "product_card_selector_note": "No stable class names; find ADD buttons with no children, then walk up 3 parents to reach the card",
+  "extraction_note": "Parse price via regex on innerText (₹\\d+), not by selector; first ₹ match is price, second is MRP if discounted",
+  "gotchas": ["Homepage search box is a fake trigger link (href=/s/), not a real input, don't try to click+type it"]
+}

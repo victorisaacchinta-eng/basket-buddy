@@ -1,0 +1,7 @@
+{
+  "platform": "bigbasket",
+  "status": "blocked",
+  "evidence": "Two consecutive page.goto attempts to bigbasket.com returned a genuine 404 (\"Page Not Found | bigbasket.com\"), not a webcmd error",
+  "likely_cause": "Bot-detection on the automated Chromium fingerprint (webcmd launches with --no-sandbox, a known automation tell)",
+  "decision": "Swapped to Amazon rather than burn hackathon time fighting a bot wall mid-run"
+}

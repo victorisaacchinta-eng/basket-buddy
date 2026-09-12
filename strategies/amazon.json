@@ -1,0 +1,7 @@
+{
+  "platform": "amazon",
+  "search_url_pattern": "https://www.amazon.in/s?k={query}",
+  "product_card_selector_note": "Stable data attribute: [data-component-type=\"s-search-result\"], no walking up parents needed",
+  "extraction_note": "Name in 'h2 span', price in '.a-price .a-offscreen' (the accessible-text price, cleaner than the visible split price)",
+  "gotchas": ["No login required to read prices, unlike Blinkit", "Results can include off-topic items sharing the search keyword (e.g. brand named 'MILK MONEY')"]
+}

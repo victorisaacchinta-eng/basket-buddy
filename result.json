@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "result": "[{\"name\":\"Country Delight Cow Milk\",\"size\":\"450 ml\",\"price\":\"46\",\"mrp\":\"48\"},{\"name\":\"Heritage Daily Health Toned Milk\",\"size\":\"500 ml\",\"price\":\"33\",\"mrp\":null},{\"name\":\"Amul Gold Full Cream Milk\",\"size\":\"500 ml\",\"price\":\"37\",\"mrp\":null},{\"name\":\"Heritage Full Cream Milk\",\"size\":\"500 ml\",\"price\":\"44\",\"mrp\":null},{\"name\":\"Country Delight Buffalo Fresh Milk\",\"size\":\"450 ml\",\"price\":\"55\",\"mrp\":\"59\"},{\"name\":\"Heritage Special Long Life Milk (90 Days Shelf Life)\",\"size\":\"450 ml\",\"price\":\"33\",\"mrp\":\"34\"},{\"name\":\"Arokya Toned Milk\",\"size\":\"500 ml\",\"price\":\"32\",\"mrp\":null},{\"name\":\"Sids Farm Buffalo A2 Milk\",\"size\":\"500 ml\",\"price\":\"63\",\"mrp\":null},{\"name\":\"Country Delight Unflavoured 25 g High Protein Cow Milk\",\"size\":\"25 g\",\"price\":\"91\",\"mrp\":\"105\"},{\"name\":\"Godrej Jersey Toned Milk - 14g Protein\",\"size\":\"14g\",\"price\":\"32\",\"mrp\":\"33\"}]",
+  "logs": [],
+  "page": {
+    "id": "page-1789191568598-1",
+    "url": "https://blinkit.com/s/?q=milk",
+    "title": "Buy milk Online | blinkit"
+  },
+  "snapshotDiff": "",
+  "artifacts": [],
+  "warnings": [],
+  "limits": {
+    "outputTruncated": false,
+    "snapshotTruncated": false
+  },
+  "timings": {
+    "quickjs_boot_ms": 0,
+    "client_bundle_init_ms": 54,
+    "program_ms": 2331,
+    "browser_wait_ms": 2333,
+    "snapshot_ms": 445
+  }
+}

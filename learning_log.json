@@ -1,0 +1,10 @@
+{
+  "task_family": "search + extract price/name for 'milk' across quick-commerce platforms",
+  "metric": "attempts before a working, clean extraction",
+  "runs": [
+    { "platform": "blinkit",   "attempts": 6, "outcome": "success", "note": "no strategy store existed yet; homepage search box turned out to be a fake link, had to discover the real /s/?q= URL pattern and the ADD-button walk-up from scratch" },
+    { "platform": "bigbasket", "attempts": 2, "outcome": "blocked", "note": "consistent real 404 from bigbasket.com itself, likely bot-detection on the automated Chromium fingerprint; correctly abandoned rather than retried indefinitely" },
+    { "platform": "amazon",    "attempts": 1, "outcome": "success", "note": "reused the 'go straight to the search URL, don't click a possibly-fake search box' lesson from blinkit; stable data-component-type selector, no auth needed" },
+    { "platform": "zepto",     "attempts": 2, "outcome": "success", "note": "URL pattern worked first try by reusing the direct-navigate lesson; one follow-up fix needed to filter discount-badge noise ('OFF') out of the name field" }
+  ]
+}
