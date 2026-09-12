@@ -131,3 +131,13 @@ Claude, WebCMD, plain Node scripts run through `webcmd browser run`. No other br
 ## Author
 
 Victor Isaac, ACE Engineering College, Hyderabad. Built solo.
+
+## Scaling beyond the demo
+
+Everything above proves the agent works. It doesn't prove it scales, those are different problems, and this section is the honest answer to both.
+
+**What changes for a real product:**
+- Live-per-click scraping doesn't scale and increases the chance of more BigBasket-style blocks across every platform, not just one. The fix is a persistent cache, refreshed on a schedule, not per visitor.
+- A prototype of that pattern lives in [`server/`](./server): an Express server (`server.js`) serving cached results instantly via `/api/data`, and a background job (`refresh_cache.js`) that's the *only* place webcmd actually runs, on a schedule, not on every request. `public/app.html` is the same UI pointed at this local API instead of a static file.
+- **Still open, deliberately not solved here:** per-location pricing (dark-store prices vary by pincode), no personal login handling (a real product would run guest/location-only, never ask a visitor for their Blinkit password), and the standing ToS question that scraping at any real scale raises. None of these are solved by more code, they're the actual constraints that shape whether this ships as a standalone consumer app or as infrastructure licensed to one platform, the direction the business section above already argues for.
+

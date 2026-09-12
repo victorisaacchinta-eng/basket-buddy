@@ -1,0 +1,12 @@
+{
+  "name": "basket-buddy-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "refresh": "node refresh_cache.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
