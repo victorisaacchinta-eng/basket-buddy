@@ -1,7 +1,5 @@
-// Basket Buddy — Phase 2 prototype server
-// Demonstrates the actual pattern a real product needs: a persistent server
-// holding a cache, instant reads for every visitor, and an explicit refresh
-// step (a background job) instead of running webcmd live on every click.
+// Basket Buddy prototype server: serves a cache to every visitor and refreshes
+// it with a background job, instead of running webcmd live on every click.
 
 const express = require("express");
 const fs = require("fs");
@@ -26,13 +24,13 @@ function readCache() {
   }
 }
 
-// GET /api/data — same shape the frontend already expects: {product: {platform: [items]}}
+// GET /api/data: same shape the frontend already expects, {product: {platform: [items]}}
 app.get("/api/data", (req, res) => {
   res.json(readCache());
 });
 
-// GET /api/status — cache freshness, so the UI can show "updated 12 min ago"
-// instead of pretending every result is live
+// GET /api/status: cache freshness, so the UI can show "updated 12 min ago"
+// instead of implying every result is live
 app.get("/api/status", (req, res) => {
   const cache = readCache();
   const products = Object.keys(cache);
@@ -51,8 +49,8 @@ app.get("/api/status", (req, res) => {
   });
 });
 
-// POST /api/refresh — triggers the background job that actually calls webcmd.
-// This is the ONE place live browser work happens, never on a per-visitor request.
+// POST /api/refresh: starts the background job that calls webcmd.
+// Live browser work only happens here, never on a per-visitor request.
 app.post("/api/refresh", (req, res) => {
   if (isRefreshing) {
     return res.status(409).json({ ok: false, message: "A refresh is already running." });
