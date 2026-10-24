@@ -1,12 +1,13 @@
-// Background refresh job, the only part that talks to webcmd.
-// In a real deployment this would run on a schedule (every 15-30 min per city),
-// not on every visitor request. For now it runs once, when you call it or hit /api/refresh.
+// Basket Buddy — background refresh job
+// This is the piece that actually talks to webcmd. In a real deployment this
+// runs on a schedule (every 15-30 min per city), NOT on every visitor request.
+// Right now it runs once, manually, when you call it or hit /api/refresh.
 
 const { execSync } = require("child_process");
 const fs = require("fs");
 const path = require("path");
 
-// edit these to match your current live sessions
+// ---- EDIT THESE to match your current live sessions ----
 // Check with: webcmd --profile <platform> session list -f json
 const SESSIONS = {
   amazon: { profile: "amazon", session: "amazon-main-3q" },
