@@ -351,7 +351,7 @@ function populateSelect(){
 
 function cheapestPrice(items){
   let min = Infinity;
-  items.forEach(it => { const p = parseFloat(it.price); if(!isNaN(p) && p < min) min = p; });
+  items.forEach(it => { const p = parseFloat(String(it.price).replace(/[^\d.]/g, "")); if(!isNaN(p) && p < min) min = p; });
   return min;
 }
 
@@ -369,14 +369,14 @@ function renderProduct(product){
 
   const cheapest = cheapestPrice(allItems.map(a => a.item));
   allItems.forEach(({plat, item}) => {
-    const price = parseFloat(item.price);
+    const price = parseFloat(String(item.price).replace(/[^\d.]/g, ""));
     const isBest = !isNaN(price) && price === cheapest;
     const card = document.createElement('div');
     card.className = 'card' + (isBest ? ' best' : '');
     card.innerHTML = `
       <div class="plat" style="color:${PLAT_COLOR[plat] || '#000'}">${plat}</div>
       <div class="item">${item.name || 'Unavailable'}</div>
-      <div class="price">${item.price ? '₹' + item.price : '—'}</div>
+      <div class="price">${item.price ? '₹' + String(item.price).replace(/^₹/, '') : '—'}</div>
       ${isBest ? '<div class="badge2">cheapest</div>' : ''}
     `;
     container.appendChild(card);
