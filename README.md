@@ -117,10 +117,18 @@ webcmd profile create <platform>
 webcmd --profile <platform> session create <platform>-main -f json
 # log in manually in the Chrome window that opens, if the platform needs it
 
-webcmd --profile <platform> --session <session-id> browser run --file <platform>_search.js
+webcmd --profile <platform> --session <session-id> browser run --file <script>
 ```
 
-Each `<platform>_search.js` is a self-contained extraction script. Strategy files in `strategies/` document what was learned per platform and why.
+The scripts are not named the same way on every platform:
+
+| Platform | Script | What it does |
+|---|---|---|
+| Blinkit | `search.js` | opens the Blinkit search page for milk and extracts up to 10 cards |
+| Zepto | `zepto_search.js` | does not navigate, it extracts from the page the session already has open |
+| Amazon | `amazon_search.js` | opens the Amazon.in search page for milk and extracts up to 10 results |
+
+For a Zepto run that navigates itself, or for other products, use `benchmark_scripts/<platform>_<product>.js` (milk, rice, shampoo, notebook, charger on blinkit, zepto and amazon). The `*_template.js` files there contain a `__QUERY__` placeholder and need it replaced before they run. BigBasket and District have no script in this repo. `run_search.sh <platform> <session-id> <script>` wraps the same command and prints the run time. Strategy files in `strategies/` document what was learned per platform and why.
 
 **Run the comparison site locally** (no WebCMD needed, it reads the saved cache):
 
