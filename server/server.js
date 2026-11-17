@@ -14,6 +14,14 @@ const CACHE_FILE = path.join(__dirname, "cache.json");
 
 let isRefreshing = false;
 let lastRefreshLog = [];
+const MAX_LOG_LINES = 100; // /api/status only shows the last 15
+
+function logRefresh(line) {
+  lastRefreshLog.push(line);
+  if (lastRefreshLog.length > MAX_LOG_LINES) {
+    lastRefreshLog = lastRefreshLog.slice(-MAX_LOG_LINES);
+  }
+}
 
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -62,12 +70,19 @@ app.post("/api/refresh", (req, res) => {
 
   const child = spawn("node", [path.join(__dirname, "refresh_cache.js")]);
 
-  child.stdout.on("data", (d) => lastRefreshLog.push(d.toString().trim()));
-  child.stderr.on("data", (d) => lastRefreshLog.push("ERROR: " + d.toString().trim()));
+  child.stdout.on("data", (d) => logRefresh(d.toString().trim()));
+  child.stderr.on("data", (d) => logRefresh("ERROR: " + d.toString().trim()));
+
+  // Without this, a failed spawn (for example node not on PATH) emits an
+  // unhandled "error" event and takes the whole server down.
+  child.on("error", (err) => {
+    isRefreshing = false;
+    logRefresh(`ERROR: could not start refresh job: ${err.message}`);
+  });
 
   child.on("close", (code) => {
     isRefreshing = false;
-    lastRefreshLog.push(`[${new Date().toISOString()}] refresh finished, exit code ${code}`);
+    logRefresh(`[${new Date().toISOString()}] refresh finished, exit code ${code}`);
   });
 
   res.json({ ok: true, message: "Refresh started in the background. Poll /api/status." });
