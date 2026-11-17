@@ -60,7 +60,12 @@ function main() {
     }
   }
 
-  fs.writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2));
+  // Write to a temp file, then rename it over cache.json. The rename replaces
+  // the file in one step, so a /api/data read during a refresh sees either the
+  // old cache or the new one, never a half written file.
+  const tmpFile = CACHE_FILE + ".tmp";
+  fs.writeFileSync(tmpFile, JSON.stringify(cache, null, 2));
+  fs.renameSync(tmpFile, CACHE_FILE);
   console.log(`Cache written: ${CACHE_FILE}`);
 }
 
